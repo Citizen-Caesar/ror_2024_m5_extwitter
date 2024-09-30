@@ -1,3 +1,3 @@
 module ApplicationHelper
-    include pagy::Frontend
+    include Pagy::Frontend
 end

@@ -12,5 +12,7 @@
     </p>
   <% end %>
 </div>
-
+# <%# Render a view helper in your views (skipping nav links for empty pages) %>
+# <%= pagy_nav(@pagy) if @pagy.pages > 1 %>
+<%= raw pagy_nav(@pagy)%>
 <%= link_to "New tweet", new_tweet_path %>
